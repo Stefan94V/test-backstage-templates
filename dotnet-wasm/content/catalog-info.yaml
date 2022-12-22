@@ -1,7 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{ values.component_id | dump }}
+  name: ${{values.component_id | dump}}
+  annotations:
+    github.com/project-slug: Stefan94V/test-backstage-templates
 spec:
   type: service
   owner: user:guest
